@@ -1,24 +1,19 @@
 import { useRef, useState, useEffect } from 'react';
 
-import cargoVideo from '../../assets/videos/cargo.mp4';
-import paymentVideo from '../../assets/videos/5043691-uhd_3840_2160_30fps.mp4';
-import devidensVideo from '../../assets/videos/5651586-hd_1080_1920_25fps.mp4';
-import trackVideo from '../../assets/videos/6595369-uhd_3840_2160_24fps.mp4';
+import cargoVideo from '../../assets/Videos/cargo.mp4';
+import paymentVideo from '../../assets/Videos/5043691-uhd_3840_2160_30fps.mp4';
+import devidensVideo from '../../assets/Videos/5651586-hd_1080_1920_25fps.mp4';
+import trackVideo from '../../assets/Videos/6595369-uhd_3840_2160_24fps.mp4';
 type VideoPlayerProps = {
     order: number; // index dari video
 };
 
-export default function VideoPlayer({order }: VideoPlayerProps ) {
+export default function VideoPlayer({ order }: VideoPlayerProps) {
     const videoRef = useRef<HTMLVideoElement>(null);
     const [isPlaying, setIsPlaying] = useState(false);
     const [progress, setProgress] = useState(0); // 0–100
 
-    const datavideo = [
-        cargoVideo,
-        paymentVideo,
-        devidensVideo,
-        trackVideo
-    ]
+    const datavideo = [cargoVideo, paymentVideo, devidensVideo, trackVideo];
     useEffect(() => {
         const video = videoRef.current;
         if (!video) return;
