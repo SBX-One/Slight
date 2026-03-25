@@ -122,7 +122,7 @@ export default function ThirdSwiper({ order }: DemoSwipersProps) {
                 >
                     {newData.map((items, index) => (
                         <SwiperSlide onClick={() => setActive(index)} key={index}>
-                            <div className={`h-full sm:h-4/5 lg:h-3/5 sm:rounded-b-none animate-  relative rounded-xl border border-slate-400 overflow-hidden flex flex-col justify-between items-end`}>
+                            <div className={`h-full sm:h-4/5 lg:h-3/5 sm:rounded-b-none animate-  relative rounded-xl border border-slate-400 overflow-hidden flex flex-col justify-between items-end ${active && ""}`}>
                                 <div className="absolute object-cover lg:-translate-y-28 -z-10">
                                     <img src={items.img} alt="" />
                                 </div>
