@@ -2,6 +2,7 @@ import { useState, useEffect } from 'react';
 import gridGray from '../../assets/imgs/grids/gray.svg';
 import gridLime from '../../assets/imgs/grids/lime.svg';
 import { Swiper, SwiperSlide } from 'swiper/react';
+import 'swiper/css';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 

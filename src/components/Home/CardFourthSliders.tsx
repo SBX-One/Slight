@@ -1,11 +1,13 @@
 import { useRef, useState, useEffect } from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
+import 'swiper/css';
+import 'swiper/css/navigation';
+import 'swiper/css/pagination';
 import { Pagination } from 'swiper/modules';
 
 import img1 from '../../assets/imgs/Rectangle 482.jpg';
 import img2 from '../../assets/imgs/Rectangle 483.jpg';
 import img3 from '../../assets/imgs/Rectangle 481.jpg';
-
 
 export default function CardFourthSliders() {
     const [paginationEl, setPaginationEl] = useState<HTMLElement | null>(null);

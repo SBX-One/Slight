@@ -25,8 +25,8 @@ export default function Navbar() {
                 </div>
                 <div className="flex gap-1 ">
                     <div className=" hidden xl:grid  rounded-2xl  gap-1  grid-cols-4 justify-between bg-white  ">
-                        <Link to={'/home'} className="">
-                            <button className={`sub-1 normalButton w-full ${isActive('/home') && ' buttonActive'}`}>Home</button>
+                        <Link to={'/'} className="">
+                            <button className={`sub-1 normalButton w-full ${isActive('/') && ' buttonActive'}`}>Home</button>
                         </Link>
                         <Link to={'/sectordevision'}>
                             <button className={`sub-1 normalButton w-full ${isActive('/sectordevision') && ' buttonActive'}`}>Section Devison</button>

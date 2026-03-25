@@ -1,6 +1,9 @@
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Autoplay } from 'swiper/modules';
 
+import 'swiper/css';
+import 'swiper/css/pagination';
+
 import { useState, useEffect, useRef } from 'react';
 import gsap from 'gsap';
 import 'aos/dist/aos.css';
@@ -119,7 +122,7 @@ export default function ThirdSwiper({ order }: DemoSwipersProps) {
                 >
                     {newData.map((items, index) => (
                         <SwiperSlide onClick={() => setActive(index)} key={index}>
-                            <div className={`h-full sm:h-4/5 lg:h-3/5 sm:rounded-b-none relative rounded-xl border border-slate-400 overflow-hidden flex flex-col justify-between items-en ${active && ""}`}>
+                            <div className={`h-full sm:h-4/5 lg:h-3/5 sm:rounded-b-none animate-  relative rounded-xl border border-slate-400 overflow-hidden flex flex-col justify-between items-end`}>
                                 <div className="absolute object-cover lg:-translate-y-28 -z-10">
                                     <img src={items.img} alt="" />
                                 </div>

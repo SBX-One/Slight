@@ -14,8 +14,7 @@ function App() {
                     <Route path="/new&docs" element={<NewDocs/>} />
                     <Route path="/teamup" element={<TeamUp />} />
                     <Route path="/sectordevision" element={<SectorDevision />} />
-                    <Route path="/home" element={<Home />} />
-                    <Route path="/" element={<Navigate to="/home" />} />
+                    <Route path="/" element={<Home />} />
                     <Route path="/404" element={<NotFound />} />
                     <Route path="*" element={<Navigate to="/404" replace />} />
                 </Route>
