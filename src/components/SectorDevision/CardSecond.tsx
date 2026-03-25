@@ -3,8 +3,6 @@ import { useState, useEffect, useRef } from 'react';
 import { Pagination, Autoplay, FreeMode } from 'swiper/modules';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
-import 'swiper/css';
-import 'swiper/css/pagination';
 
 export default function AdvantagesCard() {
     const [active, setActive] = useState<number | null>(null);

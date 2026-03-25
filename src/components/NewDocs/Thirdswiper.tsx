@@ -1,12 +1,8 @@
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Autoplay } from 'swiper/modules';
 
-import 'swiper/css';
-import 'swiper/css/pagination';
-
 import { useState, useEffect, useRef } from 'react';
 import gsap from 'gsap';
-import AOS from 'aos';
 import 'aos/dist/aos.css';
 import img1 from '../../assets/imgs/Rectangle 471.jpg';
 import img2 from '../../assets/imgs/Rectangle 472.jpg';

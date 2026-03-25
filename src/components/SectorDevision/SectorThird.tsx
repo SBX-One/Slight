@@ -3,10 +3,7 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import { useEffect } from 'react';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
-import { Pagination, Scrollbar } from 'swiper/modules';
-import 'swiper/css';
-import 'swiper/css/pagination';
-import 'swiper/css/scrollbar';
+import { Scrollbar } from 'swiper/modules';
 
 export default function SectorThird() {
     useEffect(() => {

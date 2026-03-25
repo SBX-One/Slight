@@ -1,4 +1,4 @@
-import cargoVideo from '../../assets/Videos/cargo.mp4';
+
 import img1 from '../../assets/imgs/Rectangle 483.jpg';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
