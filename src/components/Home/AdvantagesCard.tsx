@@ -1,7 +1,5 @@
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { useState, useEffect } from 'react';
-import 'swiper/css';
-
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 export default function AdvantagesCard() {

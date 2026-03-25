@@ -1,8 +1,5 @@
 import { useRef, useState, useEffect } from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
-import 'swiper/css';
-import 'swiper/css/navigation';
-import 'swiper/css/pagination';
 import { Pagination } from 'swiper/modules';
 
 import img1 from '../../assets/imgs/Rectangle 482.jpg';

@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import { useEffect } from 'react';
 import CardSecond from './CardSecond';
 import CardMarque from './CardMarque';
 import AOS from 'aos';
