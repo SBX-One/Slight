@@ -1,0 +1,105 @@
+@import url('https://fonts.cdnfonts.com/css/satoshi');
+@import 'tailwindcss';
+
+* {
+    font-family: 'Satoshi', sans-serif;
+}
+
+@theme {
+    --color-primary: #cdff81;
+    --color-secondary: #1a2835;
+    --color-background: #fafafa;
+}
+
+@utility buttonTeamup {
+    @apply p-5 rounded-full text-sm font-medium border border-secondary/20 md:px-10 ;
+}
+@utility buttonActive {
+    @apply bg-secondary text-primary;
+}
+@utility contentPadding {
+    @apply px-5 sm:px-10 xl:px-20;
+}
+
+@utility primaryButton {
+    @apply bg-primary px-10 py-5 rounded-2xl;
+}
+@utility normalButton {
+    @apply bg-white px-10 py-5 rounded-2xl;
+}
+@utility iconButton {
+    @apply w-fit p-3 rounded-full  border-white border-2;
+}
+
+/* font style   */
+
+@utility title-1-medium {
+    @apply font-medium text-6xl;
+}
+@utility title-1 {
+    @apply font-bold text-6xl;
+}
+@utility title-2 {
+    @apply font-bold text-4xl;
+}
+@utility title-2-medium {
+    @apply font-medium text-4xl;
+}
+@utility heading-1 {
+    @apply font-medium text-3xl;
+}
+@utility heading-2 {
+    @apply font-medium text-2xl;
+}
+@utility sub-1 {
+    @apply font-medium text-base;
+}
+@utility sub-2 {
+    @apply font-medium text-sm;
+}
+@utility paragraph-1 {
+    @apply font-normal text-base;
+}
+@utility paragraph-2 {
+    @apply font-normal text-xs;
+}
+@utility button-m {
+    @apply font-bold text-base;
+}
+@utility button-xs {
+    @apply font-bold text-sm;
+}
+
+.custom-pagination-container .swiper-pagination-bullet {
+    background-color: var(--color-secondary);
+    opacity: 0.3;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    display: inline-block;
+    margin: 0 4px;
+}
+
+.custom-pagination-container .swiper-pagination-bullet-active {
+    background-color: var(--color-secondary) !important;
+    opacity: 1;
+    width: 8px;
+    height: 8px;
+}
+
+.swiper-pagination-progressbar-fill {
+    background: white ;
+  transition: width 0.4s ease;
+}
+
+.custom-scrollbar {
+  background-color: rgba(255, 255, 255, 0.2);
+  height: 6px;
+  border-radius: 9999px;
+  margin-top: 1rem; 
+}
+
+.custom-scrollbar .swiper-scrollbar-drag {
+  background-color: #ffff; 
+  border-radius: 9999px;
+}
