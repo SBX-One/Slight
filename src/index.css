@@ -3,6 +3,12 @@
 
 * {
     font-family: 'Satoshi', sans-serif;
+    scroll-behavior: smooth;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+    &::-webkit-scrollbar {
+        display: none;
+    }
 }
 
 @theme {
@@ -12,7 +18,7 @@
 }
 
 @utility buttonTeamup {
-    @apply p-5 rounded-full text-sm font-medium border border-secondary/20 md:px-10 ;
+    @apply p-5 rounded-full text-sm font-medium border border-secondary/20 md:px-10 hover:bg-secondary hover:text-white transition-all duration-300 cursor-pointer;
 }
 @utility buttonActive {
     @apply bg-secondary text-primary;
@@ -22,13 +28,13 @@
 }
 
 @utility primaryButton {
-    @apply bg-primary px-10 py-5 rounded-2xl;
+    @apply bg-primary px-10 py-5 rounded-2xl hover:scale-105 hover:brightness-105 hover:shadow-[0_10px_40px_rgba(205,255,129,0.4)] transition-all duration-300 cursor-pointer;
 }
 @utility normalButton {
-    @apply bg-white px-10 py-5 rounded-2xl;
+    @apply bg-white px-10 py-5 rounded-2xl hover:bg-gray-100 hover:text-black transition-colors duration-300 cursor-pointer;
 }
 @utility iconButton {
-    @apply w-fit p-3 rounded-full  border-white border-2;
+    @apply w-fit p-3 rounded-full border-white border-2 hover:bg-white hover:text-secondary hover:scale-110 transition-all duration-300 cursor-pointer;
 }
 
 /* font style   */
@@ -102,4 +108,12 @@
 .custom-scrollbar .swiper-scrollbar-drag {
   background-color: #ffff; 
   border-radius: 9999px;
+}
+
+@utility scrollbar-x-hidden {
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* IE/Edge */
+  &::-webkit-scrollbar {
+    display: none; /* Chrome/Safari/Webkit */
+  }
 }

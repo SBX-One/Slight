@@ -127,13 +127,18 @@ export default function AdvantagesCard() {
                         }}
                         className="mt-10 "
                     >
-                        {advantagesData.map(items => (
+                        {advantagesData.map((items, index) => (
                             <SwiperSlide
-                                onClick={() => setActive(prev => (prev === items.id ? null : items.id))}
-                                className={`${active === items.id ? 'bg-secondary text-white border-2 border-primary' : 'bg-white border-secondary/20 opacity-70'} group p-10 border rounded-4xl `}
                                 key={items.id}
+                                data-aos="fade-up"
+                                data-aos-delay={index * 150}
+                                data-aos-duration="1000"
                             >
-                                <div className="flex flex-col gap-10">
+                                <div
+                                    onClick={() => setActive(prev => (prev === items.id ? null : items.id))}
+                                    className={`${active === items.id ? 'bg-secondary text-white border-2 border-primary' : 'bg-white border-secondary/20 opacity-70'} group p-10 border rounded-4xl h-full transition-colors duration-300 cursor-pointer`}
+                                >
+                                    <div className="flex flex-col gap-10">
                                     <div className="flex flex-col gap-5">
                                         <div className="flex flex-col gap-5 items-start">
                                             <div className="flex items-center gap-5 w-full">
@@ -153,19 +158,20 @@ export default function AdvantagesCard() {
                                     </div>
                                     <div className="flex flex-col gap-5 ">
                                         <div className={`  ${active !== items.id && ' opacity-0'} hidden sm:flex flex-col gap-5`}>
-                                            <button className="py-5 rounded-xl  bg-primary w-full flex items-center justify-center">
+                                            <button className="py-5 rounded-xl bg-primary w-full flex items-center justify-center hover:scale-[1.03] hover:brightness-105 hover:shadow-[0_10px_40px_rgba(205,255,129,0.4)] transition-all duration-300 cursor-pointer">
                                                 <div className="flex gap-3 text-center text-xs font-bold text-white">
                                                     <p>Invest Now</p>
                                                     <p>→</p>
                                                 </div>
                                             </button>
-                                            <button className=" py-5 rounded-xl border bg-white border-white/20 w-full flex items-center justify-center">
+                                            <button className="py-5 rounded-xl border bg-white border-white/20 w-full flex items-center justify-center hover:bg-gray-50 hover:-translate-y-1 hover:shadow-lg transition-all duration-300 cursor-pointer">
                                                 <div className="flex gap-3 text-center text-xs font-bold text-primary">
                                                     <p>Play Video</p>
                                                 </div>
                                             </button>
                                         </div>
                                     </div>
+                                </div>
                                 </div>
                             </SwiperSlide>
                         ))}

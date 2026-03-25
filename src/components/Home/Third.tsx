@@ -1,4 +1,3 @@
-
 import img1 from '../../assets/imgs/Rectangle 483.jpg';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
@@ -9,11 +8,13 @@ function Third() {
   const [active, setActive] = useState<number | null>(null);
 
     useEffect(() => {
-            AOS.init({
-                duration: 800,
-                once: true,
-            });
-        }, []);
+        AOS.init({
+            duration: 1000,
+            easing: 'ease-out-cubic',
+            once: true,
+            offset: 50,
+        });
+    }, []);
 
     const investingSteps = [
         {
@@ -53,41 +54,43 @@ function Third() {
                 </div>
                 <div className="grid grid-cols-1 gap-20 lg:gap-30 ">
                     <div className="lg:flex lg: h-fit">
-                        <p className="heading-2 sm:title-2-medium lg:title-1-medium  w-full" data-aos="fade-left">
+                        <p className="heading-2 sm:title-2-medium lg:title-1-medium  w-full" data-aos="fade-up" data-aos-duration="1200">
                             Slight simplifying maritime <br /> Investment for Everyone
                         </p>
-                        <div className="hidden lg:block w-[50%] aspect-[4/3] relative bg-black overflow-hidden rounded-2xl" data-aos="fade-right" data-aos-delay="400">
+                        <div className="hidden lg:block w-[50%] aspect-[4/3] relative bg-black overflow-hidden rounded-2xl" data-aos="zoom-out-left" data-aos-delay="200" data-aos-duration="1400">
                             <img src={img1} alt="" className="absolute top-0 left-0 w-full h-full object-cover" />
                         </div>
                     </div>
 
                     <div className="">
                         {investingSteps.map(items => (
-                            <div key={items.id} data-aos="fade-up" data-aos-delay={items.id * 150}>
+                            <div key={items.id} data-aos="fade-up" data-aos-delay={items.id * 100 + 150} data-aos-duration="1000">
                                 <div
                                     onClick={() => setActive(prev => (prev === items.id ? null : items.id))}
-                                    className={` transition-all duration-700 ease-in-out p-10 gap-32 flex justify-between lg: font-medium border-b ${
-                                        active === items.id ? ` bg-secondary rounded-xl py-5 px-10` : ``
+                                    className={` transition-all duration-500 ease-in-out p-10 gap-32 flex justify-between lg: font-medium border-b cursor-pointer group hover:bg-black/5 hover:rounded-xl hover:px-14 ${
+                                        active === items.id ? ` bg-secondary hover:bg-secondary rounded-xl py-5 px-10 hover:px-10` : ``
                                     }`}
                                 >
-                                    <p className={`sm:heading-2 lg:title-2-medium text-secondary/20 ${active === items.id && `text-white/50`}`}>0{items.id}</p>
-                                    <p className={`lg:hidden sm:heading-2 lg:title-2-medium text-black ${active === items.id && `text-primary`}`}>{items.title}</p>
+                                    <p className={`sm:heading-2 lg:title-2-medium text-secondary/20 transition-colors duration-300 group-hover:text-black/40 ${active === items.id ? `!text-white/50` : ''}`}>0{items.id}</p>
+                                    <p className={`lg:hidden sm:heading-2 lg:title-2-medium text-black transition-transform duration-500 group-hover:translate-x-2 ${active === items.id ? `text-primary` : ''}`}>{items.title}</p>
                                     <div className="hidden lg:flex justify-between w-full">
-                                        <p className={`sm:heading-2 lg:title-2-medium text-black ${active === items.id && `text-primary`}`}>{items.title}</p>
-                                        <p className={`sm:heading-2 lg:title-2-medium text-black ${active === items.id && `text-primary`}`}>→</p>
+                                        <p className={`sm:heading-2 lg:title-2-medium text-black transition-transform duration-500 group-hover:translate-x-4 ${active === items.id ? `text-primary` : ''}`}>{items.title}</p>
+                                        <p className={`sm:heading-2 lg:title-2-medium text-black transition-transform duration-500 ease-in-out flex items-center justify-center group-hover:scale-125 ${active === items.id ? `text-primary rotate-90` : ``}`}>→</p>
                                     </div>
                                 </div>
-                                {active === items.id && (
-                                    <div className=" lg:grid lg:grid-cols-7 py-10 px-5 flex flex-col gap-10 ">
-                                        <p className=" text-xs sm:text-base col-span-3  col-start-2">{items.description}</p>
-                                        <div className="hidden col-start-6 col-span-2 xl:block  aspect-[5/4] relative bg-black overflow-hidden rounded-2xl">
-                                            <VideoPlayer order={items.id}/>
-                                        </div>
-                                        <div className="block xl:hidden">
-                                            <VideoPlayer order={items.id}/>
+                                <div className={`grid transition-all duration-700 ease-in-out ${active === items.id ? 'grid-rows-[1fr] opacity-100' : 'grid-rows-[0fr] opacity-0'}`}>
+                                    <div className="overflow-hidden">
+                                        <div className=" lg:grid lg:grid-cols-7 py-10 px-5 flex flex-col gap-10 ">
+                                            <p className=" text-xs sm:text-base col-span-3  col-start-2">{items.description}</p>
+                                            <div className="hidden col-start-6 col-span-2 xl:block  aspect-[5/4] relative bg-black overflow-hidden rounded-2xl">
+                                                <VideoPlayer order={items.id}/>
+                                            </div>
+                                            <div className="block xl:hidden">
+                                                <VideoPlayer order={items.id}/>
+                                            </div>
                                         </div>
                                     </div>
-                                )}
+                                </div>
                             </div>
                         ))}
                     </div>

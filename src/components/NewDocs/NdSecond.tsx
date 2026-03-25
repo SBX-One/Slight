@@ -24,12 +24,12 @@ export default function NdSecond() {
 
                 <div className="lg:grid lg:grid-cols-2 " data-aos="fade-left">
                     <div className=" overflow-auto ">
-                        <div className="grid grid-cols-5 w-max gap-1 overflow-auto">
+                        <div className="grid grid-cols-5 w-max gap-1 overflow-auto z-20 scrollbar-x-hidden">
                             <button className=" buttonTeamup  sm:sub-1  w-full buttonActive ">all</button>
-                            <button className=" buttonTeamup  sm:sub-1  w-full  ">announcements</button>
-                            <button className=" buttonTeamup  sm:sub-1  w-full  ">Market Analysis</button>
-                            <button className=" buttonTeamup  sm:sub-1  w-full  ">Repots</button>
-                            <button className=" buttonTeamup  sm:sub-1  w-full  ">On-Chain-Data</button>
+                            <button className=" buttonTeamup  sm:sub-1 bg-white w-full  ">announcements</button>
+                            <button className=" buttonTeamup  sm:sub-1 bg-white w-full  ">Market Analysis</button>
+                            <button className=" buttonTeamup  sm:sub-1 bg-white w-full  ">Repots</button>
+                            <button className=" buttonTeamup  sm:sub-1 bg-white w-full  ">On-Chain-Data</button>
                         </div>
                     </div>
                     <hr className="hidden lg:block flex-grow border-t " />

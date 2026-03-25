@@ -122,7 +122,7 @@ export default function ThirdSwiper({ order }: DemoSwipersProps) {
                 >
                     {newData.map((items, index) => (
                         <SwiperSlide onClick={() => setActive(index)} key={index}>
-                            <div className={`h-full sm:h-4/5 lg:h-3/5 sm:rounded-b-none animate-  relative rounded-xl border border-slate-400 overflow-hidden flex flex-col justify-between items-end ${active && ""}`}>
+                            <div className={`h-full sm:h-4/5 lg:h-3/5 sm:rounded-b-none relative rounded-xl border border-slate-400 overflow-hidden flex flex-col justify-between items-end transition-all duration-500 ease-in-out hover:scale-[1.03] hover:shadow-xl cursor-pointer ${active && ""}`}>
                                 <div className="absolute object-cover lg:-translate-y-28 -z-10">
                                     <img src={items.img} alt="" />
                                 </div>
@@ -147,8 +147,8 @@ export default function ThirdSwiper({ order }: DemoSwipersProps) {
             <div className="hidden xl:flex w-full relative overflow-hidden">
                 <div ref={marqueeRef} className="flex gap-5 whitespace-nowrap h-fit w-2/7 ">
                     {[...newData, ...newData].map((items, index) => (
-                        <div onClick={() => setActive(index)} key={index} className="min-w-full  min-h-[320px]">
-                            <div className="h-full relative rounded-xl rounded-b-0 border border-slate-400 overflow-hidden flex flex-col justify-between items-end">
+                        <div onClick={() => setActive(index)} key={index} className="min-w-full min-h-[320px] p-2">
+                            <div className="h-full relative rounded-xl border border-slate-400 overflow-hidden flex flex-col justify-between items-end transition-all duration-500 ease-in-out hover:scale-[1.03] hover:shadow-xl cursor-pointer">
                                 <div className="absolute object-cover lg:-translate-y-48 -z-10">
                                     <img src={items.img} alt="" />
                                 </div>

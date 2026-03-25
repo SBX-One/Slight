@@ -11,7 +11,6 @@ function BaseLayout() {
             <main >
                 <Outlet />
             </main>
-
             <Footer />
         </div>
     );

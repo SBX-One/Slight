@@ -151,29 +151,31 @@ function Second() {
                         <AdvantagesCard />
                     </div>
                 </div>
-                <div className="hidden lg:flex  lg:gap-1  max-w-full overflow-hidden">
-                    <div className="p-10 border border-slate-300 rounded-xl h-full flex  w-4/11 flex-col gap-20" data-aos="fade-right" >
-                        <p className="title-2-medium">Why Invest In Maritime Shipping?</p>
-                        <div className="flex flex-col gap-10">
-                            <div className="flex flex-col gap-5">
-                                <p className="sub-1">MARINE SHIPPING ADVANTAGES</p>
-                                <hr />
+                <div className="hidden lg:grid grid-cols-[38%_1fr] gap-1 max-w-full w-full overflow-hidden">
+                    <div className="p-10 border border-slate-300 rounded-xl flex flex-col justify-between gap-10" data-aos="fade-right">
+                        <div className="flex flex-col gap-20">
+                            <p className="title-2-medium">Why Invest In Maritime Shipping?</p>
+                            <div className="flex flex-col gap-10">
+                                <div className="flex flex-col gap-5">
+                                    <p className="sub-1">MARINE SHIPPING ADVANTAGES</p>
+                                    <hr />
+                                </div>
+                                <p className="sub-1">
+                                    Slight as a platform that transform investment in <br /> maritime shipping by tokenizing them into smaller, affordable fractions.
+                                </p>
                             </div>
-                            <p className="sub-1">
-                                Slight as a platform that transform investment in <br /> maritime shipping by tokenizing them into smaller, affordable fractions.
-                            </p>
                         </div>
-                        <div className="flex overflow-x-auto w-full gap-1">
-                            <Swiper spaceBetween={10} slidesPerView={1.5} className="" grabCursor={true}>
-                                {[img1, img2, img3].map(items => (
-                                    <SwiperSlide className="relative overflow-hidden py-[13%] px-30 rounded-xl">
+                        <div className="flex overflow-x-auto w-full mt-auto">
+                            <Swiper spaceBetween={10} slidesPerView={1.5} className="w-full" grabCursor={true}>
+                                {[img1, img2, img3].map((items, idx) => (
+                                    <SwiperSlide key={idx} className="relative overflow-hidden py-[13%] px-[30px] rounded-xl">
                                         <img src={items} alt="" className="absolute object-cover w-full h-full top-0 left-0" />
                                     </SwiperSlide>
                                 ))}
                             </Swiper>
                         </div>
                     </div>
-                    <div data-aos="fade-left" data-aos-delay="400">
+                    <div className="h-full w-full" data-aos="fade-left" data-aos-delay="400">
                         <AdvantagesCard />
                     </div>
                 </div>

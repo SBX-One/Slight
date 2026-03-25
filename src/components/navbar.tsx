@@ -70,8 +70,8 @@ export default function Navbar() {
                             </svg>
                         </div>
                         <hr className="text-white" />
-                        <Link to={'/home'} className="">
-                            <button className={`sub-1 normalButton w-full ${isActive('/home') && ' buttonActive'}`}>Home</button>
+                        <Link to={'/'} className="">
+                            <button className={`sub-1 normalButton w-full ${isActive('/') && ' buttonActive'}`}>Home</button>
                         </Link>
                         <Link to={'/sectordevision'}>
                             <button className={`sub-1 normalButton w-full ${isActive('/sectordevision') && ' buttonActive'}`}>Section Devison</button>

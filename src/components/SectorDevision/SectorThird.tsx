@@ -16,7 +16,7 @@ export default function SectorThird() {
             });
         }, []);
     return (
-        <div className="relative contentPadding py-10 h-fit  lg:my-20 lg:grid lg:grid-cols-3">
+        <div className="relative contentPadding py-10 h-fit lg:grid lg:grid-cols-3">
             <img src={img1} alt="" className="absolute w-full h-full top-0 left-0 -z-10" />
             <div className="absolute w-full h-full bg-secondary/60 top-0 left-0 -z-10"></div>
             <div className="flex flex-col gap-5 text-white z-10 col-start-3">

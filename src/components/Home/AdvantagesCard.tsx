@@ -89,14 +89,14 @@ export default function AdvantagesCard() {
                 "The maritime shipping industry moves the world literally and financially. With a market size exceeding $2.2 trillion, it's one of the most lucrative yet traditionally closed sectors. SLIGHT opens this massive economy to everyday investors by fractionalizing access to real, high-performing maritime assets.",
         },
     ];
-   useEffect(() => {
+    useEffect(() => {
         AOS.init({
             duration: 800,
             once: true,
         });
     }, []);
     return (
-        <div>
+        <div className="h-full">
             <div className="lg:hidden">
                 <Swiper
                     spaceBetween={10}
@@ -136,8 +136,8 @@ export default function AdvantagesCard() {
                 </Swiper>
             </div>
 
-            <div>
-                <div className=" hidden lg:grid grid-cols-2 h-full gap-1">
+            <div className="h-full">
+                <div className="hidden lg:grid grid-cols-2 h-full gap-1">
                     {advantagesData.map(items => (
                         <div
                             onClick={() => setActive(prev => (prev === items.id ? null : items.id))}

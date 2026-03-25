@@ -4,7 +4,7 @@ function Herocard() {
             <div>
                 <p className=" text-secondary/30 text-start  mb-3">Route</p>
                 <div className="flex gap-1 hover:cursor-pointer w-full h-fit">
-                    <input type="text" className="border border-black/20 p-5 rounded-xl w-full h-full col-span-3" placeholder="Input text" />
+                    <input type="text" className="border border-black/20 p-5 rounded-xl w-full h-full col-span-3" placeholder="jakarta - malaysia " />
                     <div className="border border-black/20 rounded-xl cursor-pointer flex items-center justify-center px-5">
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" className="h-6 w-6  text-secondary/30">
                             <g fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5}>
@@ -18,7 +18,7 @@ function Herocard() {
             <div>
                 <p className=" text-secondary/30 text-start  mb-3">Container Size</p>
                 <div className="flex gap-1 hover:cursor-pointer w-full h-fit">
-                    <input type="text" className="border border-black/20 p-5 rounded-xl w-full h-full col-span-3" placeholder="Input text" />
+                    <input type="text" className="border border-black/20 p-5 rounded-xl w-full h-full col-span-3" placeholder="20ft" />
                     <div className="border border-black/20 rounded-xl cursor-pointer flex items-center justify-center px-5">
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" className="h-6 w-6  text-secondary/30">
                             <g fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5}>
@@ -32,7 +32,7 @@ function Herocard() {
             <div>
                 <p className=" text-secondary/30 text-start  mb-3">Contract Length</p>
                 <div className="flex gap-1 hover:cursor-pointer w-full h-fit">
-                    <input type="text" className="border border-black/20 p-5 rounded-xl w-full h-full col-span-3" placeholder="Input text" />
+                    <input type="text" className="border border-black/20 p-5 rounded-xl w-full h-full col-span-3" placeholder="1 year" />
                     <div className="border border-black/20 rounded-xl cursor-pointer flex items-center justify-center px-5">
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" className="h-6 w-6  text-secondary/30">
                             <g fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5}>
@@ -46,7 +46,7 @@ function Herocard() {
             <div>
                 <p className=" text-secondary/30 text-start  mb-3">Numbers Of Tickets</p>
                 <div className="flex gap-1 hover:cursor-pointer w-full h-fit">
-                    <input type="text" className="border border-black/20 p-5 rounded-xl w-full h-full col-span-3" placeholder="Input text" />
+                    <input type="text" className="border border-black/20 p-5 rounded-xl w-full h-full col-span-3" placeholder="100" />
                 </div>
             </div>
 

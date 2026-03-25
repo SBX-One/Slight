@@ -98,6 +98,9 @@ export default function DemoSwipers({ showPagination = false, order, cut }: Demo
                 {newData.map((items, index) => (
                     <SwiperSlide onClick={() => setActive(index)} key={index}>
                         <div
+                            data-aos="fade-up"
+                            data-aos-delay={index * 200 + 100}
+                            data-aos-duration="1000"
                             className={`${
                                 cut ? 'h-full sm:h-4/5 sm:rounded-b-none' : 'h-full'
                             } relative rounded-xl border border-slate-400 overflow-hidden flex flex-col justify-between items-end group transition-all duration-600 ease-in-out`}

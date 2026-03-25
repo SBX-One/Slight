@@ -23,7 +23,7 @@ function Home() {
                 <Fifth />
             </div>
 
-            <div className="hidden lg:block relative my-30 p-20 overflow-hidden">
+            <div className="hidden lg:block relative p-20 overflow-hidden">
                 <img src={img1} alt="" className="absolute top-0 left-0 -z-10 w-full h-full" />
                 <div className="absolute w-full h-full bg-secondary/60 top-0 left-0"></div>
                 <div className="py-20 relative px-10 bg-white rounded-4xl">

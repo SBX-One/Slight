@@ -39,7 +39,7 @@ function Hero() {
                                                     <p>→</p>
                                                 </div>
                                             </button>
-                                            <button className="text-secondary/40 lg:hidden">Learn more</button>
+                                            <button className="text-secondary/40 lg:hidden hover:text-secondary hover:scale-105 transition-all duration-300">Learn more</button>
                                         </div>
                                     </div>
                                     <div className="grid grid-cols-2 lg:flex py-20">
