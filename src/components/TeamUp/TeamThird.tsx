@@ -6,9 +6,9 @@ import 'swiper/css';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 
-import img1 from '../../assets/imgs/Rectangle 481.jpg';
-import img2 from '../../assets/imgs/Rectangle 482.jpg';
-import img3 from '../../assets/imgs/Rectangle 483.jpg';
+import img1 from '../../assets/imgs/Rectangle 481.webp';
+import img2 from '../../assets/imgs/Rectangle 482.webp';
+import img3 from '../../assets/imgs/Rectangle 483.webp';
 
 type JobItem = {
     id: number;

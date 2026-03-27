@@ -7,15 +7,15 @@ import 'swiper/css/pagination';
 import { useState, useEffect, useRef } from 'react';
 import gsap from 'gsap';
 import 'aos/dist/aos.css';
-import img1 from '../../assets/imgs/Rectangle 471.jpg';
-import img2 from '../../assets/imgs/Rectangle 472.jpg';
-import img3 from '../../assets/imgs/Rectangle 473.jpg';
-import img4 from '../../assets/imgs/Rectangle 474.jpg';
-import img5 from '../../assets/imgs/Rectangle 475.jpg';
-import img6 from '../../assets/imgs/Rectangle 476.jpg';
-import img7 from '../../assets/imgs/Rectangle 477.jpg';
-import img8 from '../../assets/imgs/Rectangle 479.jpg';
-import img9 from '../../assets/imgs/Rectangle 478.jpg';
+import img1 from '../../assets/imgs/Rectangle 471.webp';
+import img2 from '../../assets/imgs/Rectangle 472.webp';
+import img3 from '../../assets/imgs/Rectangle 473.webp';
+import img4 from '../../assets/imgs/Rectangle 474.webp';
+import img5 from '../../assets/imgs/Rectangle 475.webp';
+import img6 from '../../assets/imgs/Rectangle 476.webp';
+import img7 from '../../assets/imgs/Rectangle 477.webp';
+import img8 from '../../assets/imgs/Rectangle 479.webp';
+import img9 from '../../assets/imgs/Rectangle 478.webp';
 
 type DemoSwipersProps = {
     cut?: boolean;
@@ -103,7 +103,7 @@ export default function ThirdSwiper({ order }: DemoSwipersProps) {
     return (
         <div>
             {/* use when mobile - tablet */}
-            <div className=' lg:hidden'>
+            <div className=" lg:hidden">
                 <Swiper
                     modules={[Autoplay]}
                     spaceBetween={5}
@@ -122,7 +122,9 @@ export default function ThirdSwiper({ order }: DemoSwipersProps) {
                 >
                     {newData.map((items, index) => (
                         <SwiperSlide onClick={() => setActive(index)} key={index}>
-                            <div className={`h-full sm:h-4/5 lg:h-3/5 sm:rounded-b-none relative rounded-xl border border-slate-400 overflow-hidden flex flex-col justify-between items-end transition-all duration-500 ease-in-out hover:scale-[1.03] hover:shadow-xl cursor-pointer ${active && ""}`}>
+                            <div
+                                className={`h-full sm:h-4/5 lg:h-3/5 sm:rounded-b-none relative rounded-xl border border-slate-400 overflow-hidden flex flex-col justify-between items-end transition-all duration-500 ease-in-out hover:scale-[1.03] hover:shadow-xl cursor-pointer ${active && ''}`}
+                            >
                                 <div className="absolute object-cover lg:-translate-y-28 -z-10">
                                     <img src={items.img} alt="" />
                                 </div>

@@ -2,10 +2,10 @@ import { useState, useEffect } from 'react';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import { Swiper, SwiperSlide } from 'swiper/react';
-import cargoVideo from '../../assets/Videos/cargo.mp4';
-import img1 from '../../assets/imgs/Rectangle 481.jpg';
-import img2 from '../../assets/imgs/Rectangle 482.jpg';
-import img3 from '../../assets/imgs/Rectangle 483.jpg';
+import cargoVideo from '../../assets/Videos/cargo.webm';
+import img1 from '../../assets/imgs/Rectangle 481.webp';
+import img2 from '../../assets/imgs/Rectangle 482.webp';
+import img3 from '../../assets/imgs/Rectangle 483.webp';
 import AdvantagesCard from './AdvantagesCard';
 function Second() {
     const [active, setActive] = useState(false);

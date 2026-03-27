@@ -1,21 +1,21 @@
-import person1 from '../../assets/imgs/Rectangle 461.jpg';
-import person2 from '../../assets/imgs/Rectangle 462.jpg';
-import person3 from '../../assets/imgs/Rectangle 463.jpg';
-import person4 from '../../assets/imgs/Rectangle 464.jpg';
-import person5 from '../../assets/imgs/Rectangle 465.jpg';
-import person6 from '../../assets/imgs/Rectangle 466.jpg';
-import grid from '../../assets/imgs/grids/gray.svg'
+import person1 from '../../assets/imgs/Rectangle 461.webp';
+import person2 from '../../assets/imgs/Rectangle 462.webp';
+import person3 from '../../assets/imgs/Rectangle 463.webp';
+import person4 from '../../assets/imgs/Rectangle 464.webp';
+import person5 from '../../assets/imgs/Rectangle 465.webp';
+import person6 from '../../assets/imgs/Rectangle 466.webp';
+import grid from '../../assets/imgs/grids/gray.svg';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import { useEffect } from 'react';
 
 function CardPerson() {
-     useEffect(() => {
-            AOS.init({
-                duration: 800,
-                once: true,
-            });
-        }, []);
+    useEffect(() => {
+        AOS.init({
+            duration: 800,
+            once: true,
+        });
+    }, []);
     const persondata = [
         {
             id: 1,

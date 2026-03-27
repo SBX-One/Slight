@@ -1,9 +1,9 @@
 import { useRef, useState, useEffect } from 'react';
 
-import cargoVideo from '../../assets/Videos/cargo.mp4';
-import paymentVideo from '../../assets/Videos/5043691-uhd_3840_2160_30fps.mp4';
-import devidensVideo from '../../assets/Videos/5651586-hd_1080_1920_25fps.mp4';
-import trackVideo from '../../assets/Videos/6595369-uhd_3840_2160_24fps.mp4';
+import cargoVideo from '../../assets/Videos/cargo.webm';
+import paymentVideo from '../../assets/Videos/5043691-uhd_3840_2160_30fps.webm';
+import devidensVideo from '../../assets/Videos/5651586-hd_1080_1920_25fps.webm';
+import trackVideo from '../../assets/Videos/6595369-uhd_3840_2160_24fps.webm';
 type VideoPlayerProps = {
     order: number; // index dari video
 };

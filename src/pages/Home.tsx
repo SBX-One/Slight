@@ -3,9 +3,9 @@ import Second from '../components/Home/Second';
 import Third from '../components/Home/Third';
 import Fourth from '../components/Home/Fourth';
 import Fifth from '../components/Home/Fifth';
-import img1 from '../assets/imgs/Partner.png';
-import logos from '../assets/imgs/Frame 51.png';
-import vimgae from '../assets/imgs/Group v.png';
+import img1 from '../assets/imgs/Partner.webp';
+import logos from '../assets/imgs/Frame 51.webp';
+import vimgae from '../assets/imgs/Group v.webp';
 import Marquee from '../components/Home/Marque';
 
 function Home() {

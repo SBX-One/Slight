@@ -1,4 +1,4 @@
-import cargoVideo from '../../assets/Videos/cargo.mp4';
+import cargoVideo from '../../assets/Videos/cargo.webm';
 import Herocard from './Herocard';
 import AOS from 'aos';
 import 'aos/dist/aos.css';

@@ -1,4 +1,4 @@
-import img from '../../assets/imgs/Frame 1321314591.png';
+import img from '../../assets/imgs/Frame 1321314591.webp';
 import gridGray from '../../assets/imgs/grids/gray.svg'
 import DemoSwipers from './DemoSwipers';
 import AOS from 'aos';

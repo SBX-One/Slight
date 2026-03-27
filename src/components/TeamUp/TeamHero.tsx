@@ -1,15 +1,15 @@
-import cargoVideo from '../../assets/Videos/cargo.mp4';
+import cargoVideo from '../../assets/Videos/cargo.webm';
 
 import AOS from 'aos';
 import 'aos/dist/aos.css';
-import { useEffect } from 'react'; 
+import { useEffect } from 'react';
 function TeamHero() {
     useEffect(() => {
-                AOS.init({
-                    duration: 800,
-                    once: true,
-                });
-            }, []);
+        AOS.init({
+            duration: 800,
+            once: true,
+        });
+    }, []);
     return (
         <div>
             <div className=" relative overflow-hidden ">

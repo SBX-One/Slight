@@ -1,4 +1,4 @@
-import cargoVideo from '../../assets/Videos/cargo.mp4';
+import cargoVideo from '../../assets/Videos/cargo.webm';
 import DemoSwipers from './DemoSwipers';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
@@ -6,11 +6,11 @@ import { useEffect } from 'react';
 
 export default function NdHero() {
     useEffect(() => {
-            AOS.init({
-                duration: 800,
-                once: true,
-            });
-        }, []);
+        AOS.init({
+            duration: 800,
+            once: true,
+        });
+    }, []);
     return (
         <div>
             <div className=" relative overflow-hidden ">
@@ -27,7 +27,7 @@ export default function NdHero() {
                                     <p className="title-2 sm:title-1 " data-aos="fade-up">
                                         Latest News & <br className="lg:hidden" /> Insights
                                     </p>
-                                    <p className="paragraph-2 sm:text-base" data-aos="fade-up" >
+                                    <p className="paragraph-2 sm:text-base" data-aos="fade-up">
                                         Stay ahead with in-depth reports, on-chain data, and SLIGHT’s official announcements.
                                     </p>
 

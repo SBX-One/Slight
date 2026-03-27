@@ -1,4 +1,4 @@
-import img1 from '../../assets/imgs/Frame 1233.png';
+import img1 from '../../assets/imgs/Frame 1233.webp';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { useEffect } from 'react';
 import AOS from 'aos';

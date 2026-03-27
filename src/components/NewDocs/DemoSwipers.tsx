@@ -5,15 +5,15 @@ import 'swiper/css/pagination';
 
 import { useRef, useEffect, useState } from 'react';
 
-import img1 from '../../assets/imgs/Rectangle 471.jpg';
-import img2 from '../../assets/imgs/Rectangle 472.jpg';
-import img3 from '../../assets/imgs/Rectangle 473.jpg';
-import img4 from '../../assets/imgs/Rectangle 474.jpg';
-import img5 from '../../assets/imgs/Rectangle 475.jpg';
-import img6 from '../../assets/imgs/Rectangle 476.jpg';
-import img7 from '../../assets/imgs/Rectangle 477.jpg';
-import img8 from '../../assets/imgs/Rectangle 479.jpg';
-import img9 from '../../assets/imgs/Rectangle 478.jpg';
+import img1 from '../../assets/imgs/Rectangle 471.webp';
+import img2 from '../../assets/imgs/Rectangle 472.webp';
+import img3 from '../../assets/imgs/Rectangle 473.webp';
+import img4 from '../../assets/imgs/Rectangle 474.webp';
+import img5 from '../../assets/imgs/Rectangle 475.webp';
+import img6 from '../../assets/imgs/Rectangle 476.webp';
+import img7 from '../../assets/imgs/Rectangle 477.webp';
+import img8 from '../../assets/imgs/Rectangle 479.webp';
+import img9 from '../../assets/imgs/Rectangle 478.webp';
 
 type DemoSwipersProps = {
     showPagination?: boolean;
