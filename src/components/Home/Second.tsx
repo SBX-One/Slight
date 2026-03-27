@@ -137,7 +137,7 @@ function Second() {
                                         <div className="flex flex-nowrap gap-1 pl-5 overflow-x-auto ">
                                             {[img1, img2, img3].map(items => (
                                                 <div className="relative p-10 min-w-[80%] sm:min-w-[50%] overflow-hidden rounded-xl">
-                                                    <img src={items} alt="" className="absolute object-cover top-0 left-0 w-full h-full" />
+                                                    <img src={items} alt="" loading="lazy" className="absolute object-cover top-0 left-0 w-full h-full" />
                                                 </div>
                                             ))}
                                         </div>
@@ -169,7 +169,7 @@ function Second() {
                             <Swiper spaceBetween={10} slidesPerView={1.5} className="w-full" grabCursor={true}>
                                 {[img1, img2, img3].map((items, idx) => (
                                     <SwiperSlide key={idx} className="relative overflow-hidden py-[13%] px-[30px] rounded-xl">
-                                        <img src={items} alt="" className="absolute object-cover w-full h-full top-0 left-0" />
+                                        <img src={items} alt="" loading="lazy" className="absolute object-cover w-full h-full top-0 left-0" />
                                     </SwiperSlide>
                                 ))}
                             </Swiper>

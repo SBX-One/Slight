@@ -1,12 +1,13 @@
 import { Route, Routes, BrowserRouter, Navigate, useLocation } from 'react-router-dom';
-import { useEffect } from 'react';
+import { useEffect, Suspense, lazy } from 'react';
 import AOS from 'aos';
-import Home from './pages/Home';
-import NotFound from './pages/NotFound';
 import BaseLayout from './Layout/baseLayout';
-import TeamUp from './pages/TeamUp';
-import NewDocs from './pages/NewDocs';
-import SectorDevision from './pages/SectorDevision';
+
+const Home = lazy(() => import('./pages/Home'));
+const NotFound = lazy(() => import('./pages/NotFound'));
+const TeamUp = lazy(() => import('./pages/TeamUp'));
+const NewDocs = lazy(() => import('./pages/NewDocs'));
+const SectorDevision = lazy(() => import('./pages/SectorDevision'));
 
 function ScrollToTopAndAOS() {
     const location = useLocation();
@@ -25,16 +26,18 @@ function App() {
     return (
         <BrowserRouter>
             <ScrollToTopAndAOS />
-            <Routes>
-                <Route element={<BaseLayout />}>
-                    <Route path="/new&docs" element={<NewDocs/>} />
-                    <Route path="/teamup" element={<TeamUp />} />
-                    <Route path="/sectordevision" element={<SectorDevision />} />
-                    <Route path="/" element={<Home />} />
-                    <Route path="/404" element={<NotFound />} />
-                    <Route path="*" element={<Navigate to="/404" replace />} />
-                </Route>
-            </Routes>
+            <Suspense fallback={<div className="min-h-screen bg-white" />}>
+                <Routes>
+                    <Route element={<BaseLayout />}>
+                        <Route path="/new&docs" element={<NewDocs/>} />
+                        <Route path="/teamup" element={<TeamUp />} />
+                        <Route path="/sectordevision" element={<SectorDevision />} />
+                        <Route path="/" element={<Home />} />
+                        <Route path="/404" element={<NotFound />} />
+                        <Route path="*" element={<Navigate to="/404" replace />} />
+                    </Route>
+                </Routes>
+            </Suspense>
         </BrowserRouter>
     );
 }
